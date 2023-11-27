@@ -10,7 +10,7 @@ describe("GET /api/movies", () => {
     });
 });
 
-describe("GET /api/movies:id:1", () => {
+describe("GET /api/movies:id/1", () => {
     it("return movie id 1", async () => {
         const response = await request(app).get("/api/movies/1");
 
@@ -19,7 +19,7 @@ describe("GET /api/movies:id:1", () => {
     });
 });
 
-describe("GET /api/movies:id:0", () => {
+describe("GET /api/movies:id/0", () => {
     it("verify if status not found 404 for id 0", async () => {
         const response = await request(app).get("/api/movies/0");
 
